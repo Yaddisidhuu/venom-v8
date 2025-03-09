@@ -38,11 +38,11 @@ def install_requirements():
 install_requirements()
 
 # 🎛️ Telegram API token (replace with your actual token)
-TOKEN = '7424479555:AAGtNAbqXax_b3b--QnGYi5_XwBbQNw'
+TOKEN = '7804619373:AAEB0fe3iAfUbRV_4pPGBY3aB-Lf-d51vzI'
 bot = telebot.TeleBot(TOKEN, threaded=False)
 
 # 🛡️ List of authorized user IDs (replace with actual IDs)
-AUTHORIZED_USERS = [5588464519]
+AUTHORIZED_USERS = [6603399017]
 
 # 🌐 Global dictionary to keep track of user attacks
 user_attacks = {}
@@ -112,7 +112,7 @@ def start(message):
     user_id = message.from_user.id
     log_command(user_id, '/start')
     if user_id not in AUTHORIZED_USERS:
-        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @venomXcrazy")
+        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @yaddisidhu")
     else:
         welcome_message = (
             "🎮 **Welcome to the Ultimate Attack Bot!** 🚀\n\n"
@@ -129,7 +129,7 @@ def start(message):
             "9. Be aware of the consequences of your actions! ⚖️\n"
             "10. Stay within the limits and play fair! 🤗\n"
             "💡 Follow the rules and let's enjoy gaming together! 🎉\n"
-            "📞 Contact the owner on Instagram and Telegram: @venomXcrazy\n"
+            "📞 Contact the owner on Instagram and Telegram: @yaddisidhu\n"
             "☠️ To see the Telegram Bot Command type: /help"
             "👤 To find your user ID type: /id"
         )
@@ -141,7 +141,7 @@ def attack(message):
     user_id = message.from_user.id
     log_command(user_id, '/attack')
     if user_id not in AUTHORIZED_USERS:
-        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @venomXcrazy")
+        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @yaddisidhu")
         return
 
     # Parse target IP and port from the command ︵‿︵‿︵‿︵ ⋆.˚🦋༘⋆
@@ -155,7 +155,7 @@ def attack(message):
         bot.send_message(message.chat.id, "❌ Invalid format! Use /attack `<IP>:<port>`.")
         
 """""
-    Venom             scammer 🏳️‍🌈
+    yaddi             scammer 🏳️‍🌈
  ⣠⣶⣿⣿⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⡆⠀⠀⠀⠀
 ⠀⠹⢿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⡏⢀⣀⡀⠀⠀⠀⠀⠀
@@ -182,7 +182,7 @@ def stop(message):
     user_id = message.from_user.id
     log_command(user_id, '/stop')
     if user_id not in AUTHORIZED_USERS:
-        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @venomXcrazy")
+        bot.send_message(message.chat.id, "🚫 Access Denied! Contact the owner for assistance: @yaddisidhu")
         return
 
     stop_attack(user_id)
@@ -196,10 +196,10 @@ def show_id(message):
 
     # 👤 Sending the message with the user ID and username
     bot.send_message(message.chat.id, f"👤 Your User ID is: {user_id}\n"
-                                      f"👥 Your Username is: @{username}")
+                                      f"👥 Your Username is: @{yaddisidhu}")
 
     # 👑 Printing the bot owner's username ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆
-    bot_owner = "venomXcrazy"  # 👑 The bot owner's username  ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆
+    bot_owner = "@yaddisidhu"  # 👑 The bot owner's username  ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆
     bot.send_message(message.chat.id, f"🤖 This bot is owned by: @{bot_owner}")
 
 # 💬 Command handler for /rules. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁
@@ -225,7 +225,7 @@ def rules(message):
 @bot.message_handler(commands=['owner'])
 def owner(message):
     log_command(message.from_user.id, '/owner')
-    bot.send_message(message.chat.id, "📞 Contact the owner: @venomXcrazy")
+    bot.send_message(message.chat.id, "📞 Contact the owner: @yaddisidhu")
 
 # 💬 Command handler for /uptime. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁. ݁₊ ⊹ . ݁˖ . ݁
 @bot.message_handler(commands=['uptime'])
@@ -287,7 +287,7 @@ def help_command(message):
 """
 **🚨 IMPORTANT: PLEASE READ CAREFULLY BEFORE USING THIS BOT 🚨**
 
-This bot is owned and operated by @venomXcrazy on Telegram and all4outgaming on Instagram, 🇮🇳. By using this bot, you acknowledge that you understand and agree to the following terms:
+This bot is owned and operated by @yaddisidhu on Telegram and all4outgaming on Instagram, 🇮🇳. By using this bot, you acknowledge that you understand and agree to the following terms:
 
 * **🔒 NO WARRANTIES**: This bot is provided "as is" and "as available", without warranty of any kind, express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
 * **🚫 LIMITATION OF LIABILITY**: The owner and operator of this bot, @all4outgaming1 on Telegram and all4outgaming on Instagram, shall not be liable for any damages or losses arising from the use of this bot, including but not limited to direct, indirect, incidental, punitive, and consequential damages, including loss of profits, data, or business interruption.
